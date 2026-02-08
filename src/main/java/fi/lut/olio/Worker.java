@@ -1,5 +1,6 @@
 package fi.lut.olio;
 
+// luodaan worker-luokka
 public class Worker {
     private String name;
     private String role;

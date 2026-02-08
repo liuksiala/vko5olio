@@ -1,8 +1,8 @@
 package fi.lut.olio;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+// luodaan factory-luokka
 public class Factory { 
     private String factoryName;
     private ArrayList<Machine> machines;

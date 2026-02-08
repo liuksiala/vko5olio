@@ -14,7 +14,7 @@ public class App {
         Factory factory = new Factory(factoryName);
 
 
-
+        // valikko
         boolean running = true;
         while (running) {
             System.out.println("1) Lisää kone");
@@ -25,6 +25,8 @@ public class App {
             sc.nextLine();
 
             switch (choice) {
+
+                // kysytään koneen ja työntekijän tiedot
                 case 1:
                     System.out.println("Anna koneen tyyppi: ");
                     String type = sc.nextLine();
@@ -46,15 +48,17 @@ public class App {
                     break;
                 
                 case 2:
+                    // listataan koneet ja tiedot
                     System.out.println("Tehtaasta " + factory.getName() + " löytyy seuraavat koneet:");
                     
                     for (Machine m : factory.getMachines()) {
                         System.out.println(m.getMachineDetails());
-                        System.out.println(); // tyhjä rivi koneiden väliin
+                        System.out.println();
                     }  
                     break;
 
                 case 0:
+                    // lopetetaan ohjelma
                     System.out.println("Kiitos ohjelman käytöstä.");
                     running = false;
                     
