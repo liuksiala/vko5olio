@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 // luodaan factory-luokka
 public class Factory { 
-    private String factoryName;
+    private String name;
     private ArrayList<Machine> machines;
 
-    public Factory(String factoryName) {
-        this.factoryName = factoryName;
+    public Factory(String name) {
+        this.name = name;
         this.machines = new ArrayList<Machine>();
     }
 
@@ -21,6 +21,6 @@ public class Factory {
     }
 
     public String getName() {
-        return factoryName;
+        return name;
     }
 }

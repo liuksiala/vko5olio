@@ -8,11 +8,10 @@ public class App {
 
         // Kysytään käyttäjältä tehtaan nimi
         System.out.println("Anna tehtaalle nimi: ");
-        String factoryName = sc.nextLine();
+        String name = sc.nextLine();
 
         // Luodaan uusi tehdas käyttäjän syöttämällä nimellä
-        Factory factory = new Factory(factoryName);
-
+        Factory factory = new Factory(name);
 
         // valikko
         boolean running = true;
