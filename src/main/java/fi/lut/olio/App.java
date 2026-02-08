@@ -7,7 +7,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         // Kysytään käyttäjältä tehtaan nimi
-        System.out.print("Anna tehtaalle nimi: ");
+        System.out.println("Anna tehtaalle nimi: ");
         String factoryName = sc.nextLine();
 
         // Luodaan uusi tehdas käyttäjän syöttämällä nimellä
@@ -35,7 +35,7 @@ public class App {
                     System.out.println("Anna työntekijän nimi: ");
                     String workerName = sc.nextLine();
 
-                    System.out.println("Anna työntekijän rooli: ");
+                    System.out.println("Anna työntekijän ammattinimike: ");
                     String workerRole = sc.nextLine();
 
                     Worker worker = new Worker(workerName, workerRole);
